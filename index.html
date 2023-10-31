@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Edu TAS Beginner"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Leckerli One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pageContiner">
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a
+            href="#home"
+            class="active tablinks"
+            onclick="openTab(event, 'homeTab')"
+            >Home</a
+          >
+          <a
+            href="#pantry"
+            class="tablinks"
+            onclick="openTab(event, 'pantryTab')"
+            >Pantry</a
+          >
+          <a
+            href="#mealPlanner"
+            class="tablinks"
+            onclick="openTab(event, 'mealPlannerTab')"
+            >Meal Planner</a
+          >
+          <!-- <a
+            href="#testimonial"
+            class="tablinks"
+            onclick="openTab(event, 'testimonialTab')"
+            >Testimonial</a
+          > -->
+          <a href="contact.html" class="tablinks">Contact us</a>
+          <a href="#about" class="tablinks">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="menuOnClick()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <div id="homeTab" class="tabcontent">
+          <div class="parallax">
+            <h1 class="gradient-text">Let's cook</h1>
+          </div>
+          <div class="parallaxDiv">
+            <input
+              type="text"
+              id="inputText"
+              placeholder="Search Ingredient.."
+            />
+            <button id="searchBtn" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+            <div class="continerMain"></div>
+          </div>
+        </div>
+        <div id="pantryTab" class="tabcontent">
+          <p><b>Oils, Vinegars and Condiments</b><br /></p>
+
+          <ul>
+            <li>Oils: canola oil, extra-virgin olive oil, toasted sesame</li>
+
+            <li>Vinegars: balsamic, distilled white, red wine, rice</li>
+
+            <li>Ketchup</li>
+
+            <li>Mayonnaise</li>
+
+            <li>Dijon mustard</li>
+
+            <li>Soy sauce</li>
+
+            <li>Chili paste</li>
+
+            <li>Hot sauce</li>
+
+            <li>
+              Worcestershire<br />
+              &nbsp;
+            </li>
+          </ul>
+
+          <p><b>Seasonings</b><br /></p>
+
+          <ul>
+            <li>Kosher salt<br /></li>
+
+            <li>Black peppercorns<br /></li>
+
+            <li>
+              Dried herbs and spices: bay leaves, cayenne pepper, crushed red
+              pepper, cumin, ground coriander, oregano, paprika, rosemary, thyme
+              leaves, cinnamon, cloves, allspice, ginger, nutmeg<br />
+            </li>
+
+            <li>
+              Spice blends: chili powder, curry powder, Italian seasoning<br />
+            </li>
+
+            <li>Vanilla extract</li>
+          </ul>
+
+          <p>
+            <b><br />Canned Goods and Bottled Items</b><br />
+          </p>
+
+          <ul>
+            <li>Canned beans: black, cannellini, chickpeas, kidney<br /></li>
+
+            <li>Capers<br /></li>
+
+            <li>Olives<br /></li>
+
+            <li>Peanut butter<br /></li>
+
+            <li>Preserves or jelly<br /></li>
+
+            <li>Low-sodium stock or broth<br /></li>
+
+            <li>Canned tomatoes<br /></li>
+
+            <li>Tomatoes, canned and paste<br /></li>
+
+            <li>Salsa<br /></li>
+
+            <li>
+              Tuna fish<br />
+              <br />
+            </li>
+          </ul>
+
+          <p><b>Grains and Legumes</b><br /></p>
+
+          <ul>
+            <li>Breadcrumbs: regular, panko<br /></li>
+
+            <li>Couscous<br /></li>
+
+            <li>Dried lentils<br /></li>
+
+            <li>Pasta: regular, whole wheat<br /></li>
+
+            <li>Rice<br /></li>
+
+            <li>Rolled oats<br /></li>
+
+            <li>
+              One other dried grain: try barley, millet, quinoa or
+              wheatberries<br />
+              <br />
+            </li>
+          </ul>
+
+          <p><b>Baking Products</b><br /></p>
+
+          <ul>
+            <li>Baking powder<br /></li>
+
+            <li>Baking soda<br /></li>
+
+            <li>Brown sugar<br /></li>
+
+            <li>Cornstarch<br /></li>
+
+            <li>All-purpose flour<br /></li>
+
+            <li>Granulated sugar<br /></li>
+
+            <li>
+              Honey<br />
+              <br />
+            </li>
+          </ul>
+
+          <p><b>Refrigerator Basics</b><br /></p>
+
+          <ul>
+            <li>Butter<br /></li>
+
+            <li>Cheese: sharp cheddar, feta, Parmesan, mozzarella<br /></li>
+
+            <li>Large eggs<br /></li>
+
+            <li>Milk<br /></li>
+
+            <li>Plain yogurt<br /></li>
+
+            <li>
+              Corn tortillas<br />
+              &nbsp;
+            </li>
+          </ul>
+
+          <p><b>Freezer </b><br /></p>
+
+          <ul>
+            <li>
+              Frozen fruit: blackberries, blueberries, peaches, strawberries<br />
+            </li>
+
+            <li>
+              Frozen vegetables: broccoli, bell pepper and onion mix, corn,
+              edamame, peas, spinach<br />
+              <br />
+            </li>
+          </ul>
+
+          <p><b>Storage Produce</b></p>
+
+          <ul>
+            <li>Garlic<br /></li>
+
+            <li>Onions (red, yellow)<br /></li>
+
+            <li>Potatoes<br /></li>
+
+            <li>Dried fruit: raisins, apples, apricots<br /></li>
+
+            <li>Nuts or seeds: almonds, peanuts, sunflower<br /></li>
+          </ul>
+        </div>
+        <div id="mealPlannerTab" class="tabcontent">
+          <img
+            src="Meal-planner-13.jpg"
+            alt="Meal-planner"
+            class="responsive"
+          />
+        </div>
+        <div id="testimonialTab" class="tabcontent"></div>
+      </main>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
